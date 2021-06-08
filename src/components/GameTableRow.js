@@ -11,6 +11,7 @@ export default class GameTableRow extends Component {
             return (
               <button
                 className="btn btn-squared-default btn-outline-dark"
+                style={value === "*" ? { backgroundColor: "grey" } : {}}
                 key={"input" + (this.props.gameRowNumber + index)}
                 id={"input" + (this.props.gameRowNumber + index)}
                 onClick={
